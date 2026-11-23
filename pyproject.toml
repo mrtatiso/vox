@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vox"
+version = "1.0.0"
+description = "salt + key → a new band80, always the same for the same pair"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["kdf", "scrypt", "band80", "deterministic"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Security :: Cryptography",
+]
+
+[project.scripts]
+vox = "vox:main"
+
+[tool.setuptools]
+py-modules = ["vox"]
